@@ -41,6 +41,8 @@ public class Controller implements Initializable
         
         String nameToFind = searchForField.getText();
         Student key = new Student(nameToFind, ' ');
+        
+        outputArea.setText("Search for " + nameToFind + "\n");
        
        //  Sequential search
        int start = Student.indexOfFirstMatchingBy(orderedByName, key, orderByName);
@@ -50,7 +52,7 @@ public class Controller implements Initializable
        {
            if (!orderedByName[i].getName().equals(nameToFind))
                return;
-            outputArea.appendText(orderedByName[i].getName() + "\n");
+            outputArea.appendText(orderedByName[i].toString() + "\n");
        }
  
     }
