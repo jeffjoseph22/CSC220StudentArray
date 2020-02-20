@@ -96,7 +96,7 @@ public class Controller implements Initializable
 
         System.out.println("Original:         " + Arrays.toString(students));
         System.out.println("Ordered by grade: " + Arrays.toString(orderedByGrade));
-        System.out.println("Ordered by name: " + Arrays.toString(orderedByName));
+        System.out.println("Ordered by name:  " + Arrays.toString(orderedByName));
     }
 
     
